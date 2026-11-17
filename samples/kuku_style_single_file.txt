@@ -1,0 +1,22 @@
+SHOW: The Heiress Next Door - single-file variant (synthetic sample)
+SOURCE: written for testing other screenplay layouts - not a real show
+LANGUAGE: en
+
+Episode 1
+[00:00.0 - 00:03.5] SCENE 1 - INT. BALLROOM - NIGHT
+[00:04.0 - 00:07.5] Victoria: You spilled wine on my dress.
+[00:08.0 - 00:11.0] Maya: I didn't touch you.
+[00:16.0 - 00:18.0] ACTION: Victoria slaps Maya.
+[00:19.0 - 00:23.0] Victoria: Get on your knees and apologize.
+[00:24.0 - 00:28.0] Maya: I won't kneel for something I didn't do.
+[00:39.0 - 00:41.0] ETHAN (O.S.)
+  Let her go.
+[00:50.0 - 00:54.5] Ethan: She's the woman I'm going to marry.
+
+Episode 2
+[00:00.0 - 00:04.0] SCENE 1 - INT. PENTHOUSE - NIGHT
+[00:05.0 - 00:10.0] Ethan: One year. You play my fiancee. No questions.
+[00:27.0 - 00:31.0] Ethan: The real reason could get you killed.
+[00:41.0 - 00:45.5] Victoria (O.S.): Does she know she's the missing heiress?
+[01:11.0 - 01:13.0] (A hand grabs her wrist from the darkness)
+[01:14.0 - 01:17.0] Stranger: Don't scream. I'm your brother.

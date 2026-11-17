@@ -1,0 +1,82 @@
+# Studio theme: strict monochrome (black / white / gray). Tokens mirrored in frontend/ui.py.
+[server]
+enableStaticServing = true          # serves frontend/static/ (Three.js, fonts) at /app/static/ - no CDN
+
+[theme]
+base = "dark"
+primaryColor = "#FFFFFF"
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#111111"
+textColor = "#FFFFFF"
+linkColor = "#FFFFFF"
+linkUnderline = true
+borderColor = "#303030"
+dataframeBorderColor = "#222222"
+dataframeHeaderBackgroundColor = "#111111"
+dataframeHeaderTextColor = "#B3B3B3"
+showWidgetBorder = true
+baseRadius = "6px"
+buttonRadius = "6px"
+baseFontSize = 15
+font = "Inter, 'Segoe UI', system-ui, sans-serif"
+headingFont = "'Archivo Black', Inter, 'Segoe UI', sans-serif"
+headingFontWeights = [400, 400, 600, 600, 600, 600]
+headingFontSizes = ["1.85rem", "1.1rem", "1rem", "0.95rem", "0.9rem", "0.85rem"]
+codeFont = "'Cascadia Mono', Consolas, ui-monospace, monospace"
+codeBackgroundColor = "#181818"
+chartCategoricalColors = ["#FFFFFF", "#B3B3B3", "#777777", "#444444"]
+chartSequentialColors = ["#181818", "#303030", "#444444", "#5E5E5E", "#777777", "#959595", "#B3B3B3", "#CFCFCF", "#E8E8E8", "#FFFFFF"]
+showSidebarBorder = true
+greenColor = "#FFFFFF"
+greenBackgroundColor = "#181818"
+greenTextColor = "#FFFFFF"
+orangeColor = "#B3B3B3"
+orangeBackgroundColor = "#181818"
+orangeTextColor = "#E0E0E0"
+yellowColor = "#B3B3B3"
+yellowBackgroundColor = "#181818"
+yellowTextColor = "#E0E0E0"
+redColor = "#B3B3B3"
+redBackgroundColor = "#1C1C1C"
+redTextColor = "#FFFFFF"
+blueColor = "#B3B3B3"
+blueBackgroundColor = "#181818"
+blueTextColor = "#E0E0E0"
+violetColor = "#B3B3B3"
+violetBackgroundColor = "#181818"
+violetTextColor = "#E0E0E0"
+grayColor = "#777777"
+grayBackgroundColor = "#181818"
+grayTextColor = "#B3B3B3"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/inter-latin-400-normal.woff2"
+weight = 400
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/inter-latin-500-normal.woff2"
+weight = 500
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/inter-latin-600-normal.woff2"
+weight = 600
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/inter-latin-700-normal.woff2"
+weight = 700
+[[theme.fontFaces]]
+family = "Archivo Black"
+url = "app/static/fonts/archivo-black-latin-400-normal.woff2"
+weight = 400
+
+[theme.sidebar]
+backgroundColor = "#0A0A0A"
+secondaryBackgroundColor = "#111111"
+borderColor = "#222222"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

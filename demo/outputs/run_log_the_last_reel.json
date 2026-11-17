@@ -1,0 +1,68 @@
+{
+ "show": "The Last Reel (demo)",
+ "name": "the_last_reel",
+ "files": [
+  "episode-01.txt",
+  "episode-02.txt",
+  "episode-03.txt",
+  "episode-04.txt",
+  "episode-05.txt",
+  "episode-06.txt",
+  "episode-07.txt",
+  "episode-08.txt"
+ ],
+ "run_at": "2026-11-17T22:52:28",
+ "model": "groq/openai/gpt-oss-120b",
+ "fallback_model": "groq/openai/gpt-oss-20b",
+ "config_file": "config.yaml",
+ "allow_joins": false,
+ "lines": 150,
+ "duration_seconds": 525.9,
+ "candidates": 8,
+ "top_n": 8,
+ "selection": {
+  "mode": "relative",
+  "hook_top_pct": 25,
+  "cliff_top_pct": 25,
+  "hook_lines": 28,
+  "cliff_lines": 27,
+  "lowest_hook_score_used": 3,
+  "lowest_cliff_score_used": 2
+ },
+ "widened": [
+  "top % widened -> hooks 15%, cliffs 15%",
+  "top % widened -> hooks 20%, cliffs 20%",
+  "top % widened -> hooks 25%, cliffs 25%"
+ ],
+ "parser_warnings": 0,
+ "tagger_notes": [
+  "part 2: AI skipped 3 lines -> scored 0"
+ ],
+ "seconds_per_step": {
+  "1_parse": 0.0,
+  "2_tag": 38.7,
+  "3_candidates": 0.0,
+  "4_cold_viewer": 3.2,
+  "5_rank": 0.0
+ },
+ "seconds_total": 41.9,
+ "usage": {
+  "model": "groq/openai/gpt-oss-120b",
+  "fallback_model": "groq/openai/gpt-oss-20b",
+  "answered_by": {
+   "groq/openai/gpt-oss-120b": 3,
+   "groq/openai/gpt-oss-20b": 8
+  },
+  "calls_total": 11,
+  "calls_cached": 0,
+  "calls_by_task": {
+   "tagger": 3,
+   "cold_viewer": 8
+  },
+  "prompt_tokens": 10480,
+  "completion_tokens": 5634,
+  "cost_usd": 0.0,
+  "seconds": 44.4,
+  "cold_viewer_model": "groq/openai/gpt-oss-20b"
+ }
+}

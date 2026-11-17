@@ -1,0 +1,5 @@
+Vendored for offline use (no CDN):
+- three 0.187.0 (MIT) - vendor/three/
+- @fontsource/inter 5.3.0 (OFL-1.1) - fonts/inter-*
+- @fontsource/archivo-black 5.3.0 (OFL-1.1) - fonts/archivo-black-*
+Obtained with 'npm pack' (no install scripts run).

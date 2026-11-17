@@ -1,0 +1,73 @@
+EPISODE NUMBER: Episode 8
+EPISODE LOGLINE: At the Hale Pictures premiere, Maya screens the restored reel to the press; Victor's crime plays on the big screen, Thomas Reyes appears, and Victor makes one last move.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HALE PICTURES PREMIERE THEATRE - NIGHT
+Scene start: 00:00.00
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.04)
+A packed premiere. Press in every row. Victor in the front seat, smiling for the cameras.
+
+**ACTION:**
+Start: (00:03.19) | End: (00:07.47)
+The lights dim. Instead of the trailer, grainy footage fills the giant screen: the burning sound stage.
+
+**SOUND FX:**
+Start: (00:07.62) | End: (00:09.66)
+A gasp runs through the audience.
+
+**ACTION:**
+Start: (00:09.81) | End: (00:14.13)
+On screen, the man in the long coat chains the fire door, then turns. Victor's younger face, enormous.
+
+**VICTOR (On his feet, shouting):**
+Start: (00:14.28) | End: (00:16.63)
+"Stop this! Turn it off!"
+
+**ACTION:**
+Start: (00:16.78) | End: (00:20.90)
+In the projection booth window above, Maya and Ruth keep the reel running.
+
+**MAYA (Over the speakers):**
+Start: (00:21.05) | End: (00:25.62)
+"Seven people. Twenty years. Everyone in this room should see it."
+
+**ACTION:**
+Start: (00:25.77) | End: (00:29.81)
+Inspector Osei walks down the aisle toward Victor with two officers.
+
+**OSEI (Formal):**
+Start: (00:29.96) | End: (00:34.53)
+"Victor Hale, you're under arrest for the murders at Stage Nine."
+
+**ACTION:**
+Start: (00:34.68) | End: (00:38.88)
+Victor backs away. A side door opens. A grey-bearded man steps into the projector beam.
+
+**THOMAS (Hoarse):**
+Start: (00:39.03) | End: (00:41.38)
+"Hello, Victor. You missed me."
+
+**ACTION:**
+Start: (00:41.53) | End: (00:45.37)
+Maya freezes in the booth window.
+
+**MAYA (Tears in her voice):**
+Start: (00:45.52) | End: (00:47.12)
+"Dad?"
+
+**ACTION:**
+Start: (00:47.27) | End: (00:51.47)
+Victor grabs a gun from an officer's holster and turns it on the projection booth.
+
+**VICTOR (Wild):**
+Start: (00:51.62) | End: (00:57.31)
+"Stop the reel, Maya. Or this is the last thing your father ever watches."
+
+Scene end: 00:57.46
+
+--- SCRIPT END ---

@@ -1,0 +1,42 @@
+# Secrets - never commit
+.env
+
+# Transcripts / screenplays (copyrighted, keep private)
+data/*
+!data/screenplays/
+data/screenplays/*
+!data/screenplays/.gitkeep
+
+# Outputs quote the transcripts, so keep them out of the public repo.
+# (Share raw outputs privately for submission, e.g. a Drive link.)
+outputs/*
+!outputs/.gitkeep
+
+# LLM reply cache (contains transcript text)
+cache/
+
+# Evaluation files generated from the private answer key / transcripts
+eval/gold_labels.json
+eval/heldout_*
+eval/results_*
+
+# Personal planning notes and local tool settings (not part of the product)
+CLAUDE.md
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.streamlit/secrets.toml
+
+# Earlier test runs (YouTube shows, synthetic samples) kept locally, not published
+archive/
+
+# Exported solution doc quotes Kuku script lines - submitted via the form, not published
+docs/*.pdf
+docs/*.docx
+
+# Submission package (quotes Kuku script lines) - submitted via the form, not published
+KUKU_SUBMISSION/

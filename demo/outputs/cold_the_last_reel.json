@@ -1,0 +1,1058 @@
+{
+ "candidates": [
+  {
+   "segments": [
+    {
+     "first_id": "L069",
+     "last_id": "L079",
+     "ep": 4,
+     "start": 228.08,
+     "end": 269.24,
+     "ep_start": 12.47,
+     "ep_end": 53.63
+    }
+   ],
+   "kind": "single",
+   "duration": 41.2,
+   "hook_id": "L069",
+   "hook_text": "Lena Hale, Victor's daughter, tips a glass of champagne down the front of Maya's dress.",
+   "hook_score": 5,
+   "cliff_id": "L079",
+   "cliff_text": "That woman stole a priceless reel from my archive. Officers, please.",
+   "cliff_score": 5,
+   "archetype": "humiliation",
+   "hook_reason": "",
+   "cliff_reason": "",
+   "max_needs_context": 0,
+   "avg_needs_context": 0.0,
+   "pre_score": 25.0,
+   "lines": [
+    {
+     "id": "L069",
+     "start": 228.08,
+     "type": "action",
+     "text": "Lena Hale, Victor's daughter, tips a glass of champagne down the front of Maya's dress.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L070",
+     "start": 232.43,
+     "type": "sfx",
+     "text": "Laughter ripples through the guests.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L071",
+     "start": 234.58,
+     "type": "dialogue",
+     "text": "Oops. Now you look like what you are.",
+     "speaker": "LENA",
+     "delivery": "Sweetly"
+    },
+    {
+     "id": "L072",
+     "start": 238.19,
+     "type": "dialogue",
+     "text": "Enough, Lena.",
+     "speaker": "DANIEL",
+     "delivery": "Sharp"
+    },
+    {
+     "id": "L073",
+     "start": 239.94,
+     "type": "action",
+     "text": "Daniel steps between them and offers Maya his jacket. The room goes quiet.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L074",
+     "start": 244.21,
+     "type": "dialogue",
+     "text": "You're taking her side? Over family?",
+     "speaker": "LENA",
+     "delivery": "Stunned"
+    },
+    {
+     "id": "L075",
+     "start": 247.08,
+     "type": "dialogue",
+     "text": "I'm taking the side of the truth.",
+     "speaker": "DANIEL",
+     "delivery": "Steady"
+    },
+    {
+     "id": "L076",
+     "start": 250.32,
+     "type": "action",
+     "text": "On stage, Victor taps the microphone. Every camera turns to him.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L077",
+     "start": 254.51,
+     "type": "dialogue",
+     "text": "Friends. Tonight we celebrate fifty years. And tonight, sadly, a thief is in this room.",
+     "speaker": "VICTOR",
+     "delivery": "Warm, public voice"
+    },
+    {
+     "id": "L078",
+     "start": 260.72,
+     "type": "action",
+     "text": "A spotlight swings onto Maya.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L079",
+     "start": 264.67,
+     "type": "dialogue",
+     "text": "That woman stole a priceless reel from my archive. Officers, please.",
+     "speaker": "VICTOR",
+     "delivery": "Pointing"
+    }
+   ],
+   "cand_id": "C01",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "At a party, Lena spills champagne on Maya, Daniel defends Maya, and Victor announces a theft of a priceless reel.",
+    "question_left": "Who stole the reel and why is Maya involved?",
+    "confusing": [
+     "Who is Maya and why is she targeted?",
+     "What is the significance of the 'priceless reel'?",
+     "Why is Daniel defending Maya?",
+     "What is the relationship between Lena, Daniel, and Victor?"
+    ],
+    "standalone": 2,
+    "hook_3s": 3,
+    "want_next": 4
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L055",
+     "last_id": "L064",
+     "ep": 3,
+     "start": 186.14,
+     "end": 215.61,
+     "ep_start": 29.64,
+     "ep_end": 59.11
+    }
+   ],
+   "kind": "single",
+   "duration": 29.5,
+   "hook_id": "L055",
+   "hook_text": "Ruth stops the projector on a single frame. The man's hand: a heavy signet ring.",
+   "hook_score": 4,
+   "cliff_id": "L064",
+   "cliff_text": "Footsteps race up the stairs. The booth door handle begins to turn.",
+   "cliff_score": 5,
+   "archetype": "reveal_secret",
+   "hook_reason": "signet ring",
+   "cliff_reason": "handle turns",
+   "max_needs_context": 1,
+   "avg_needs_context": 1.0,
+   "pre_score": 20.0,
+   "lines": [
+    {
+     "id": "L055",
+     "start": 186.14,
+     "type": "action",
+     "text": "Ruth stops the projector on a single frame. The man's hand: a heavy signet ring.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L056",
+     "start": 190.49,
+     "type": "dialogue",
+     "text": "I know that ring. I've seen it on one man for forty years.",
+     "speaker": "RUTH",
+     "delivery": "Very still"
+    },
+    {
+     "id": "L057",
+     "start": 195.95,
+     "type": "dialogue",
+     "text": "Say it.",
+     "speaker": "MAYA",
+     "delivery": "Barely audible"
+    },
+    {
+     "id": "L058",
+     "start": 197.7,
+     "type": "scene",
+     "text": "SCENE 02 - INT. RIALTO CINEMA - PROJECTION BOOTH - CONTINUOUS",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L059",
+     "start": 197.7,
+     "type": "dialogue",
+     "text": "Victor Hale.",
+     "speaker": "RUTH",
+     "delivery": "Slowly"
+    },
+    {
+     "id": "L060",
+     "start": 199.45,
+     "type": "action",
+     "text": "Daniel steps back from the screen as if struck.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L061",
+     "start": 203.56,
+     "type": "dialogue",
+     "text": "No. My father was a producer, not a murderer.",
+     "speaker": "DANIEL",
+     "delivery": "Breaking"
+    },
+    {
+     "id": "L062",
+     "start": 207.54,
+     "type": "sfx",
+     "text": "Downstairs, the cinema's front door bangs open.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L063",
+     "start": 209.77,
+     "type": "dialogue",
+     "text": "Were you followed?",
+     "speaker": "RUTH",
+     "delivery": "Urgent"
+    },
+    {
+     "id": "L064",
+     "start": 211.53,
+     "type": "action",
+     "text": "Footsteps race up the stairs. The booth door handle begins to turn.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C02",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "Ruth stops a projector to show a ring, identifies the man as Victor Hale, and Daniel reacts angrily while a door opens and footsteps rush up the stairs.",
+    "question_left": "",
+    "confusing": [
+     "Why is the ring significant?",
+     "Who is Victor Hale?",
+     "Why does Daniel say his father was a producer, not a murderer?",
+     "What is happening with the door and footsteps?"
+    ],
+    "standalone": 2,
+    "hook_3s": 3,
+    "want_next": 4
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L139",
+     "last_id": "L149",
+     "ep": 8,
+     "start": 478.44,
+     "end": 520.1,
+     "ep_start": 9.81,
+     "ep_end": 51.47
+    }
+   ],
+   "kind": "single",
+   "duration": 41.7,
+   "hook_id": "L139",
+   "hook_text": "On screen, the man in the long coat chains the fire door, then turns. Victor's younger face, enormous.",
+   "hook_score": 4,
+   "cliff_id": "L149",
+   "cliff_text": "Victor grabs a gun from an officer's holster and turns it on the projection booth.",
+   "cliff_score": 5,
+   "archetype": "reveal_secret",
+   "hook_reason": "young Victor revealed on screen",
+   "cliff_reason": "Victor points gun at projection booth",
+   "max_needs_context": 2,
+   "avg_needs_context": 1.27,
+   "pre_score": 20.0,
+   "lines": [
+    {
+     "id": "L139",
+     "start": 478.44,
+     "type": "action",
+     "text": "On screen, the man in the long coat chains the fire door, then turns. Victor's younger face, enormous.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L140",
+     "start": 482.91,
+     "type": "dialogue",
+     "text": "Stop this! Turn it off!",
+     "speaker": "VICTOR",
+     "delivery": "On his feet, shouting"
+    },
+    {
+     "id": "L141",
+     "start": 485.41,
+     "type": "action",
+     "text": "In the projection booth window above, Maya and Ruth keep the reel running.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L142",
+     "start": 489.68,
+     "type": "dialogue",
+     "text": "Seven people. Twenty years. Everyone in this room should see it.",
+     "speaker": "MAYA",
+     "delivery": "Over the speakers"
+    },
+    {
+     "id": "L143",
+     "start": 494.4,
+     "type": "action",
+     "text": "Inspector Osei walks down the aisle toward Victor with two officers.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L144",
+     "start": 498.59,
+     "type": "dialogue",
+     "text": "Victor Hale, you're under arrest for the murders at Stage Nine.",
+     "speaker": "OSEI",
+     "delivery": "Formal"
+    },
+    {
+     "id": "L145",
+     "start": 503.31,
+     "type": "action",
+     "text": "Victor backs away. A side door opens. A grey-bearded man steps into the projector beam.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L146",
+     "start": 507.66,
+     "type": "dialogue",
+     "text": "Hello, Victor. You missed me.",
+     "speaker": "THOMAS",
+     "delivery": "Hoarse"
+    },
+    {
+     "id": "L147",
+     "start": 510.16,
+     "type": "action",
+     "text": "Maya freezes in the booth window.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L148",
+     "start": 514.15,
+     "type": "dialogue",
+     "text": "Dad?",
+     "speaker": "MAYA",
+     "delivery": "Tears in her voice"
+    },
+    {
+     "id": "L149",
+     "start": 515.9,
+     "type": "action",
+     "text": "Victor grabs a gun from an officer's holster and turns it on the projection booth.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C03",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "Victor Hale, a man in a long coat, is confronted by police and a mysterious man named Thomas while he is in a projection booth, and he pulls a gun on the booth.",
+    "question_left": "Who is Thomas and why is he talking to Victor?",
+    "confusing": [
+     "Long coat chains the fire door",
+     "Projection booth window above",
+     "Maya and Ruth keep the reel running",
+     "Victor grabs a gun from an officer's holster and turns it on the projection booth"
+    ],
+    "standalone": 1,
+    "hook_3s": 2,
+    "want_next": 4
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L078",
+     "last_id": "L082",
+     "ep": 4,
+     "start": 260.72,
+     "end": 283.36,
+     "ep_start": 45.11,
+     "ep_end": 67.75
+    }
+   ],
+   "kind": "single",
+   "duration": 22.6,
+   "hook_id": "L078",
+   "hook_text": "A spotlight swings onto Maya.",
+   "hook_score": 5,
+   "cliff_id": "L082",
+   "cliff_text": "Victor's smile does not move. But his hand closes into a fist around the microphone.",
+   "cliff_score": 4,
+   "archetype": "reveal_secret",
+   "hook_reason": "",
+   "cliff_reason": "",
+   "max_needs_context": 0,
+   "avg_needs_context": 0.0,
+   "pre_score": 18.0,
+   "lines": [
+    {
+     "id": "L078",
+     "start": 260.72,
+     "type": "action",
+     "text": "A spotlight swings onto Maya.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L079",
+     "start": 264.67,
+     "type": "dialogue",
+     "text": "That woman stole a priceless reel from my archive. Officers, please.",
+     "speaker": "VICTOR",
+     "delivery": "Pointing"
+    },
+    {
+     "id": "L080",
+     "start": 269.39,
+     "type": "action",
+     "text": "Two police officers push through the crowd toward Maya. Cameras flash in her face.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L081",
+     "start": 273.7,
+     "type": "dialogue",
+     "text": "Ask him what's on the reel! Ask him who chained the fire door!",
+     "speaker": "MAYA",
+     "delivery": "Loud, defiant"
+    },
+    {
+     "id": "L082",
+     "start": 279.16,
+     "type": "action",
+     "text": "Victor's smile does not move. But his hand closes into a fist around the microphone.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C04",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "A man named Victor accuses a woman named Maya of stealing a valuable reel, while police intervene and Maya defies him.",
+    "question_left": "Why is Maya defiant and what is the reel about?",
+    "confusing": [
+     "priceless reel",
+     "fire door",
+     "Victor's smile",
+     "Maya's identity"
+    ],
+    "standalone": 1,
+    "hook_3s": 2,
+    "want_next": 3
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L017",
+     "last_id": "L025",
+     "ep": 1,
+     "start": 54.34,
+     "end": 84.39,
+     "ep_start": 54.34,
+     "ep_end": 84.39
+    }
+   ],
+   "kind": "single",
+   "duration": 30.0,
+   "hook_id": "L017",
+   "hook_text": "Victor nods. A guard grabs Maya's wrist and twists the reel out of her hands.",
+   "hook_score": 4,
+   "cliff_id": "L025",
+   "cliff_text": "He lowers the reel. In the frame, frozen: a younger Victor standing beside a burning door.",
+   "cliff_score": 4,
+   "archetype": "threat_danger",
+   "hook_reason": "guard yanks reel",
+   "cliff_reason": "burning door frame",
+   "max_needs_context": 5,
+   "avg_needs_context": 1.33,
+   "pre_score": 16.0,
+   "lines": [
+    {
+     "id": "L017",
+     "start": 54.34,
+     "type": "action",
+     "text": "Victor nods. A guard grabs Maya's wrist and twists the reel out of her hands.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L018",
+     "start": 58.69,
+     "type": "dialogue",
+     "text": "Let go of me!",
+     "speaker": "MAYA",
+     "delivery": "In pain"
+    },
+    {
+     "id": "L019",
+     "start": 60.82,
+     "type": "dialogue",
+     "text": "She's finished here. Escort her out. And take her keycard.",
+     "speaker": "VICTOR",
+     "delivery": "To the guards"
+    },
+    {
+     "id": "L020",
+     "start": 65.17,
+     "type": "scene",
+     "text": "SCENE 02 - INT. ARCHIVE CORRIDOR - CONTINUOUS",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L021",
+     "start": 65.17,
+     "type": "action",
+     "text": "The guards march Maya down the corridor. She glances back.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L022",
+     "start": 69.32,
+     "type": "camera",
+     "text": "Through the vault window: Victor alone, holding the reel up to the light.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L023",
+     "start": 72.39,
+     "type": "action",
+     "text": "Victor's face drains of colour as he reads the frames.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L024",
+     "start": 76.54,
+     "type": "dialogue",
+     "text": "He filmed it. That fool actually filmed it.",
+     "speaker": "VICTOR",
+     "delivery": "Under his breath"
+    },
+    {
+     "id": "L025",
+     "start": 80.15,
+     "type": "action",
+     "text": "He lowers the reel. In the frame, frozen: a younger Victor standing beside a burning door.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C05",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "Victor forces Maya to hand over a reel, then watches a flashback of a younger Victor at a burning door while Maya is escorted out.",
+    "question_left": "Why is Maya being escorted and what is the significance of the younger Victor in the flashback?",
+    "confusing": [
+     "reel",
+     "keycard",
+     "vault window",
+     "burning door"
+    ],
+    "standalone": 1,
+    "hook_3s": 2,
+    "want_next": 4
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L006",
+     "last_id": "L017",
+     "ep": 1,
+     "start": 14.82,
+     "end": 58.54,
+     "ep_start": 14.82,
+     "ep_end": 58.54
+    }
+   ],
+   "kind": "single",
+   "duration": 43.7,
+   "hook_id": "L006",
+   "hook_text": "She turns the can over. A strip of masking tape reads: PROPERTY OF THOMAS REYES.",
+   "hook_score": 4,
+   "cliff_id": "L017",
+   "cliff_text": "Victor nods. A guard grabs Maya's wrist and twists the reel out of her hands.",
+   "cliff_score": 4,
+   "archetype": "reveal_secret",
+   "hook_reason": "tape shows father's name",
+   "cliff_reason": "guard yanks reel",
+   "max_needs_context": 5,
+   "avg_needs_context": 1.42,
+   "pre_score": 16.0,
+   "lines": [
+    {
+     "id": "L006",
+     "start": 14.82,
+     "type": "action",
+     "text": "She turns the can over. A strip of masking tape reads: PROPERTY OF THOMAS REYES.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L007",
+     "start": 19.17,
+     "type": "dialogue",
+     "text": "Dad?",
+     "speaker": "MAYA",
+     "delivery": "Stunned"
+    },
+    {
+     "id": "L008",
+     "start": 20.92,
+     "type": "camera",
+     "text": "Close on Maya's trembling hand over the faded handwriting.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L009",
+     "start": 23.83,
+     "type": "dialogue",
+     "text": "Twenty years. They told us there was nothing left of him. Not one frame.",
+     "speaker": "MAYA",
+     "delivery": "Shaken"
+    },
+    {
+     "id": "L010",
+     "start": 29.67,
+     "type": "sfx",
+     "text": "The vault door slams. Footsteps on concrete.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L011",
+     "start": 31.9,
+     "type": "dialogue",
+     "text": "That can is not on your restoration list, Miss Reyes.",
+     "speaker": "VICTOR",
+     "delivery": "Cold, controlled"
+    },
+    {
+     "id": "L012",
+     "start": 36.25,
+     "type": "action",
+     "text": "Victor Hale steps into the lamp light, silver hair, black overcoat, two security guards behind him.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L013",
+     "start": 40.64,
+     "type": "dialogue",
+     "text": "It was misfiled. I was logging it.",
+     "speaker": "MAYA",
+     "delivery": "Defensive"
+    },
+    {
+     "id": "L014",
+     "start": 43.88,
+     "type": "dialogue",
+     "text": "Give it to me.",
+     "speaker": "VICTOR",
+     "delivery": "Quietly"
+    },
+    {
+     "id": "L015",
+     "start": 46.01,
+     "type": "dialogue",
+     "text": "It has my father's name on it.",
+     "speaker": "MAYA",
+     "delivery": "Steady"
+    },
+    {
+     "id": "L016",
+     "start": 49.25,
+     "type": "dialogue",
+     "text": "Your father stole from this studio. Everything he touched belongs to me.",
+     "speaker": "VICTOR",
+     "delivery": "Smiling thinly"
+    },
+    {
+     "id": "L017",
+     "start": 54.34,
+     "type": "action",
+     "text": "Victor nods. A guard grabs Maya's wrist and twists the reel out of her hands.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C06",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "Maya discovers a can marked with her father's name and is confronted by Victor, who claims ownership of her father's belongings.",
+    "question_left": "Why does Victor claim the can and what is the significance of the studio?",
+    "confusing": [
+     "The relationship between Maya and Victor is unclear",
+     "The backstory of the studio and the 'restoration list' is missing"
+    ],
+    "standalone": 1,
+    "hook_3s": 2,
+    "want_next": 4
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L034",
+     "last_id": "L042",
+     "ep": 2,
+     "start": 111.28,
+     "end": 145.13,
+     "ep_start": 26.89,
+     "ep_end": 60.74
+    }
+   ],
+   "kind": "single",
+   "duration": 33.8,
+   "hook_id": "L034",
+   "hook_text": "Daniel lifts a film can from the passenger seat. Can 4417.",
+   "hook_score": 3,
+   "cliff_id": "L042",
+   "cliff_text": "Maya's phone lights up. Unknown number. A text: GIVE BACK THE REEL OR YOUR MOTHER'S HOUSE BURNS TOO.",
+   "cliff_score": 5,
+   "archetype": "reveal_secret",
+   "hook_reason": "Daniel shows can",
+   "cliff_reason": "text threatens fire",
+   "max_needs_context": 5,
+   "avg_needs_context": 1.33,
+   "pre_score": 15.0,
+   "lines": [
+    {
+     "id": "L034",
+     "start": 111.28,
+     "type": "action",
+     "text": "Daniel lifts a film can from the passenger seat. Can 4417.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L035",
+     "start": 115.47,
+     "type": "dialogue",
+     "text": "Because I took this from his desk ten minutes ago.",
+     "speaker": "DANIEL",
+     "delivery": "Serious"
+    },
+    {
+     "id": "L036",
+     "start": 119.82,
+     "type": "dialogue",
+     "text": "You stole from your own father?",
+     "speaker": "MAYA",
+     "delivery": "Shocked"
+    },
+    {
+     "id": "L037",
+     "start": 122.69,
+     "type": "scene",
+     "text": "SCENE 02 - INT. DANIEL'S CAR - MOVING - NIGHT",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L038",
+     "start": 122.69,
+     "type": "camera",
+     "text": "Wipers beat. Streetlights slide across their faces.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L039",
+     "start": 125.52,
+     "type": "dialogue",
+     "text": "I've never seen him afraid. Tonight he locked himself in his office and burned papers.",
+     "speaker": "DANIEL",
+     "delivery": "Quiet"
+    },
+    {
+     "id": "L040",
+     "start": 131.73,
+     "type": "dialogue",
+     "text": "Then you know he's hiding something.",
+     "speaker": "MAYA",
+     "delivery": "Tense"
+    },
+    {
+     "id": "L041",
+     "start": 134.6,
+     "type": "dialogue",
+     "text": "I know he called someone and said one sentence. The Reyes girl has seen it.",
+     "speaker": "DANIEL",
+     "delivery": "Hesitant"
+    },
+    {
+     "id": "L042",
+     "start": 140.81,
+     "type": "action",
+     "text": "Maya's phone lights up. Unknown number. A text: GIVE BACK THE REEL OR YOUR MOTHER'S HOUSE BURNS TOO.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C07",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "Daniel steals a film can from his father's desk and threatens Maya with a text demanding a reel back or her mother’s house will burn.",
+    "question_left": "Who is the Reyes girl and what is the reel?",
+    "confusing": [
+     "Why is Daniel stealing from his own father?",
+     "What is the reel that must be returned?",
+     "Who is the Reyes girl?",
+     "Why is the mother’s house threatened?",
+     "What is the significance of the burned papers?"
+    ],
+    "standalone": 1,
+    "hook_3s": 2,
+    "want_next": 4
+   }
+  },
+  {
+   "segments": [
+    {
+     "first_id": "L120",
+     "last_id": "L127",
+     "ep": 7,
+     "start": 419.56,
+     "end": 445.7,
+     "ep_start": 13.98,
+     "ep_end": 40.12
+    }
+   ],
+   "kind": "single",
+   "duration": 26.1,
+   "hook_id": "L120",
+   "hook_text": "Maya runs back and pulls the door. It won't move.",
+   "hook_score": 3,
+   "cliff_id": "L127",
+   "cliff_text": "The door crashes open. Daniel, soot on his face, hauls Ruth over his shoulder.",
+   "cliff_score": 4,
+   "archetype": "threat_danger",
+   "hook_reason": "",
+   "cliff_reason": "",
+   "max_needs_context": 0,
+   "avg_needs_context": 0.0,
+   "pre_score": 12.0,
+   "lines": [
+    {
+     "id": "L120",
+     "start": 419.56,
+     "type": "action",
+     "text": "Maya runs back and pulls the door. It won't move.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L121",
+     "start": 423.71,
+     "type": "dialogue",
+     "text": "Someone chained it. From outside.",
+     "speaker": "MAYA",
+     "delivery": "Panicking"
+    },
+    {
+     "id": "L122",
+     "start": 426.21,
+     "type": "sfx",
+     "text": "A crackle. The smell of smoke rolls under the door.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L123",
+     "start": 428.56,
+     "type": "dialogue",
+     "text": "Same door. Same trick. He's doing it again.",
+     "speaker": "RUTH",
+     "delivery": "Grim"
+    },
+    {
+     "id": "L124",
+     "start": 432.17,
+     "type": "action",
+     "text": "Smoke pours through the vents. Ruth coughs and sinks to her knees.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L125",
+     "start": 436.4,
+     "type": "dialogue",
+     "text": "Ruth, stay with me. Stay low!",
+     "speaker": "MAYA",
+     "delivery": "Desperate"
+    },
+    {
+     "id": "L126",
+     "start": 439.27,
+     "type": "sfx",
+     "text": "Metal shrieks. Bolt cutters bite through the chain.",
+     "speaker": null,
+     "delivery": null
+    },
+    {
+     "id": "L127",
+     "start": 441.54,
+     "type": "action",
+     "text": "The door crashes open. Daniel, soot on his face, hauls Ruth over his shoulder.",
+     "speaker": null,
+     "delivery": null
+    }
+   ],
+   "cand_id": "C08",
+   "cold": {
+    "cold_ok": true,
+    "understood": false,
+    "ai_said_understood": true,
+    "what_happens": "Maya and Ruth are trapped in a room with a chained door that opens when Daniel uses bolt cutters, and they are rescued as smoke pours in.",
+    "question_left": "Who is Daniel and why is he helping them?",
+    "confusing": [
+     "chain on the door",
+     "smoke pouring through vents",
+     "bolt cutters used to open the door"
+    ],
+    "standalone": 1,
+    "hook_3s": 2,
+    "want_next": 4
+   }
+  }
+ ],
+ "thresholds_used": {
+  "mode": "relative",
+  "hook_top_pct": 25,
+  "cliff_top_pct": 25,
+  "hook_lines": 28,
+  "cliff_lines": 27,
+  "lowest_hook_score_used": 3,
+  "lowest_cliff_score_used": 2
+ },
+ "relaxed": [
+  "top % widened -> hooks 15%, cliffs 15%",
+  "top % widened -> hooks 20%, cliffs 20%",
+  "top % widened -> hooks 25%, cliffs 25%"
+ ],
+ "raw_before_dedupe": 44,
+ "meta": {
+  "source_file": "8 episode files",
+  "format": "kuku_screenplay",
+  "has_episode_markers": true,
+  "episodes": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "times_restart_per_episode": true,
+  "duration_seconds": 525.9,
+  "counts": {
+   "dialogue": 68,
+   "sound": 0,
+   "action": 45,
+   "scene": 12,
+   "camera": 12,
+   "sfx": 13,
+   "episode_marker": 0
+  },
+  "speakers": [
+   "DANIEL",
+   "GUARD",
+   "LENA",
+   "MAYA",
+   "OSEI",
+   "RUTH",
+   "THOMAS",
+   "VICTOR"
+  ],
+  "show": "The Last Reel (demo)",
+  "source": "Original fictional microdrama written for the public demo - not a real show",
+  "language": "en",
+  "episodes_info": {
+   "1": {
+    "logline": "Maya Reyes, a night-shift film archivist at Hale Pictures, finds an unlabelled reel carrying her missing father's name; studio head Victor Hale walks in and demands it.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "2": {
+    "logline": "Thrown out of the studio, Maya is stopped in the rain by Daniel Hale, Victor's son, who has taken the reel from his father's office and wants to know what it hides.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "3": {
+    "logline": "Ruth Okafor, an old projectionist and Maya's mentor, screens the reel: it shows the studio fire twenty years ago and a man locking a door from outside.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "4": {
+    "logline": "At the Hale Pictures anniversary gala, Maya confronts Victor in public; Lena Hale humiliates her, Daniel defends her, and Victor accuses Maya of theft in front of the press.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "5": {
+    "logline": "Arrested after the gala, Maya meets Inspector Kwame Osei, who reveals that her father's case was closed on orders from above - and that Thomas Reyes was seen alive three years ago.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "6": {
+    "logline": "Daniel discovers forty frames are missing from the reel and finds them in Victor's private safe; Victor catches him and disowns him.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "7": {
+    "logline": "Victor orders the old archive emptied by fire; Maya and Ruth are trapped inside, Daniel breaks them out, and the security footage shows a living man in the archive.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   },
+   "8": {
+    "logline": "At the Hale Pictures premiere, Maya screens the restored reel to the press; Victor's crime plays on the big screen, Thomas Reyes appears, and Victor makes one last move.",
+    "continuity_notes": "Original demo show for AI Promo Intelligence Studio."
+   }
+  }
+ }
+}

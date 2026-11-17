@@ -1,0 +1,77 @@
+EPISODE NUMBER: Episode 6
+EPISODE LOGLINE: Daniel discovers forty frames are missing from the reel and finds them in Victor's private safe; Victor catches him and disowns him.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. VICTOR'S STUDY - HALE MANSION - NIGHT
+Scene start: 00:00.00
+
+**ACTION:**
+Start: (00:00.00) | End: (00:04.28)
+Daniel kneels at a wall safe behind a framed film poster, a stethoscope pressed to the dial.
+
+**DANIEL (Muttering):**
+Start: (00:04.43) | End: (00:10.49)
+"Forty frames cut out of the reel. If he kept anything, he kept it here."
+
+**SOUND FX:**
+Start: (00:10.64) | End: (00:12.64)
+Click. The safe swings open.
+
+**ACTION:**
+Start: (00:12.79) | End: (00:17.15)
+Inside: a small film tin labelled 4417-B. Beside it, a passport with a stranger's name and Thomas Reyes's face.
+
+**DANIEL (Stunned):**
+Start: (00:17.30) | End: (00:21.13)
+"He knew. He's known where Reyes was all along."
+
+**ACTION:**
+Start: (00:21.28) | End: (00:25.44)
+Daniel opens the tin. He holds a strip of frames to the desk lamp.
+
+**CAMERA:**
+Start: (00:25.59) | End: (00:28.59)
+In the frames: Victor at the fire door, turning to look straight at the camera.
+
+**SOUND FX:**
+Start: (00:28.74) | End: (00:30.78)
+A lamp switches on behind him.
+
+**VICTOR (Softly):**
+Start: (00:30.93) | End: (00:33.65)
+"You always were the curious one."
+
+**ACTION:**
+Start: (00:33.80) | End: (00:38.04)
+Victor stands in the doorway in a dressing gown, a glass of whisky in his hand.
+
+**DANIEL (Shaking):**
+Start: (00:38.19) | End: (00:42.39)
+"Seven people died in that fire. You chained the door."
+
+**VICTOR (Calm):**
+Start: (00:42.54) | End: (00:47.85)
+"I built this family on that fire. Your school, your car, your name."
+
+**DANIEL (Furious):**
+Start: (00:48.00) | End: (00:51.09)
+"Then I don't want any of it."
+
+**VICTOR (Cold):**
+Start: (00:51.24) | End: (00:54.33)
+"Put the frames down, Daniel. Choose carefully."
+
+**ACTION:**
+Start: (00:54.48) | End: (00:58.28)
+Daniel pockets the film strip.
+
+**VICTOR (Final):**
+Start: (00:58.43) | End: (01:01.89)
+"Then from tonight, you are not my son."
+
+Scene end: 01:02.04
+
+--- SCRIPT END ---

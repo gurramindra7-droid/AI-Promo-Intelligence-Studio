@@ -1,0 +1,87 @@
+EPISODE NUMBER: Episode 7
+EPISODE LOGLINE: Victor orders the old archive emptied by fire; Maya and Ruth are trapped inside, Daniel breaks them out, and the security footage shows a living man in the archive.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HALE PICTURES OLD ARCHIVE - NIGHT
+Scene start: 00:00.00
+
+**ACTION:**
+Start: (00:00.00) | End: (00:04.08)
+Maya and Ruth search the shelves of the abandoned archive by torchlight.
+
+**RUTH (Urgent):**
+Start: (00:04.23) | End: (00:11.40)
+"If your father hid a second reel, it's in the nitrate room. He never trusted anyone else's shelves."
+
+**SOUND FX:**
+Start: (00:11.55) | End: (00:13.83)
+Behind them, a heavy door slams. A chain rattles through the handles.
+
+**ACTION:**
+Start: (00:13.98) | End: (00:17.98)
+Maya runs back and pulls the door. It won't move.
+
+**MAYA (Panicking):**
+Start: (00:18.13) | End: (00:20.48)
+"Someone chained it. From outside."
+
+**SOUND FX:**
+Start: (00:20.63) | End: (00:22.83)
+A crackle. The smell of smoke rolls under the door.
+
+**RUTH (Grim):**
+Start: (00:22.98) | End: (00:26.44)
+"Same door. Same trick. He's doing it again."
+
+**ACTION:**
+Start: (00:26.59) | End: (00:30.67)
+Smoke pours through the vents. Ruth coughs and sinks to her knees.
+
+**MAYA (Desperate):**
+Start: (00:30.82) | End: (00:33.54)
+"Ruth, stay with me. Stay low!"
+
+**SOUND FX:**
+Start: (00:33.69) | End: (00:35.81)
+Metal shrieks. Bolt cutters bite through the chain.
+
+**ACTION:**
+Start: (00:35.96) | End: (00:40.12)
+The door crashes open. Daniel, soot on his face, hauls Ruth over his shoulder.
+
+**DANIEL (Shouting):**
+Start: (00:40.27) | End: (00:42.62)
+"Go! The roof's coming down!"
+
+Scene end: 00:42.77
+
+SCENE 02
+Scene heading: EXT. OLD ARCHIVE - NIGHT
+Scene start: 00:42.77
+
+**ACTION:**
+Start: (00:42.77) | End: (00:46.85)
+They stumble into the night as the archive roof collapses behind them.
+
+**ACTION:**
+Start: (00:47.00) | End: (00:51.08)
+Daniel hands Maya a security tablet he grabbed from the guard booth.
+
+**DANIEL (Breathless):**
+Start: (00:51.23) | End: (00:55.43)
+"The cameras were still recording. Look at the nitrate room."
+
+**CAMERA:**
+Start: (00:55.58) | End: (00:58.70)
+On the tablet: a grey-bearded man in the smoke, clutching a film can, slipping out a side door.
+
+**MAYA (Whispering):**
+Start: (00:58.85) | End: (01:03.05)
+"He was in there. My father was in there tonight."
+
+Scene end: 01:03.20
+
+--- SCRIPT END ---

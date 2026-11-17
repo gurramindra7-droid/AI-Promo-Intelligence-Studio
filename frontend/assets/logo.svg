@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="52" viewBox="0 0 280 52">
+  <!-- monochrome reel mark -->
+  <g transform="translate(24 26)">
+    <circle r="20" fill="#111" stroke="#FFF" stroke-width="2"/>
+    <circle r="4" fill="#FFF"/>
+    <g fill="#000" stroke="#777" stroke-width="1.2">
+      <circle cx="0" cy="-11" r="5"/><circle cx="10.5" cy="-3.4" r="5"/><circle cx="6.5" cy="8.9" r="5"/>
+      <circle cx="-6.5" cy="8.9" r="5"/><circle cx="-10.5" cy="-3.4" r="5"/>
+    </g>
+  </g>
+  <text x="56" y="22" font-family="'Arial Black', 'Archivo Black', sans-serif" font-size="11" letter-spacing="2.4" fill="#B3B3B3" font-weight="900">AI PROMO</text>
+  <text x="56" y="40" font-family="'Arial Black', 'Archivo Black', sans-serif" font-size="13.5" letter-spacing="0.6" fill="#FFFFFF" font-weight="900">INTELLIGENCE STUDIO</text>
+</svg>

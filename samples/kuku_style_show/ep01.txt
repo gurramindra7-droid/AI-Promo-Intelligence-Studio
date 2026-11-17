@@ -1,0 +1,28 @@
+SHOW: The Heiress Next Door (synthetic sample)
+SOURCE: written for testing the AI Promo Finder - not a real show
+LANGUAGE: en
+EPISODE 1: The Wrong Wedding
+
+[00:00] SCENE 1 - INT. GRAND HOTEL BALLROOM - NIGHT
+[00:01] (Maya, in a waitress uniform, carries a tray past the wedding guests)
+[00:04] VICTORIA: You. Waitress. You spilled wine on my dress.
+[00:08] MAYA: I didn't touch you, ma'am. I was nowhere near you.
+[00:12] VICTORIA: Are you calling me a liar in front of my guests?
+[00:16] (Victoria slaps Maya. The ballroom goes silent.)
+[00:19] VICTORIA: Get on your knees and apologize. Now.
+[00:24] MAYA: I won't kneel for something I didn't do.
+[00:29] VICTORIA: Then you're fired. Security, throw this trash out.
+[00:34] SCENE 2 - INT. HOTEL LOBBY - CONTINUOUS
+[00:35] (Two guards drag Maya toward the doors)
+[00:39] ETHAN (O.S.)
+Let her go.
+[00:42] (The guards freeze. Ethan Cross, the hotel's owner, walks in.)
+[00:46] VICTORIA: Ethan, darling. She's just a clumsy servant.
+[00:50] ETHAN: She's not a servant. She's the woman I'm going to marry.
+[00:55] (Gasps from the guests. Maya stares at Ethan - she has never seen him before.)
+[00:59] MAYA: Marry? I don't even know who you are.
+[01:03] ETHAN: You will. Sign this contract tonight, and nobody will ever humiliate you again.
+[01:10] MAYA: And if I say no?
+[01:13] ETHAN: Then your mother's hospital bills stop being paid tomorrow morning.
+[01:19] (Maya's phone buzzes: "Hospital - Final payment notice")
+[01:23] MAYA: How do you know about my mother?

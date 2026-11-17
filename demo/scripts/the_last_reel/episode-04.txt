@@ -1,0 +1,81 @@
+EPISODE NUMBER: Episode 4
+EPISODE LOGLINE: At the Hale Pictures anniversary gala, Maya confronts Victor in public; Lena Hale humiliates her, Daniel defends her, and Victor accuses Maya of theft in front of the press.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HALE PICTURES GALA - BALLROOM - NIGHT
+Scene start: 00:00.00
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:02.92)
+Crystal chandeliers, cameras flashing, a giant banner: HALE PICTURES, FIFTY YEARS OF STORIES.
+
+**ACTION:**
+Start: (00:03.07) | End: (00:07.23)
+Maya, in a borrowed black dress, walks straight through the crowd toward the stage.
+
+**LENA (Mocking):**
+Start: (00:07.38) | End: (00:12.32)
+"Look who crawled in. The archive girl my father fired for stealing."
+
+**ACTION:**
+Start: (00:12.47) | End: (00:16.67)
+Lena Hale, Victor's daughter, tips a glass of champagne down the front of Maya's dress.
+
+**SOUND FX:**
+Start: (00:16.82) | End: (00:18.82)
+Laughter ripples through the guests.
+
+**LENA (Sweetly):**
+Start: (00:18.97) | End: (00:22.43)
+"Oops. Now you look like what you are."
+
+**DANIEL (Sharp):**
+Start: (00:22.58) | End: (00:24.18)
+"Enough, Lena."
+
+**ACTION:**
+Start: (00:24.33) | End: (00:28.45)
+Daniel steps between them and offers Maya his jacket. The room goes quiet.
+
+**LENA (Stunned):**
+Start: (00:28.60) | End: (00:31.32)
+"You're taking her side? Over family?"
+
+**DANIEL (Steady):**
+Start: (00:31.47) | End: (00:34.56)
+"I'm taking the side of the truth."
+
+**ACTION:**
+Start: (00:34.71) | End: (00:38.75)
+On stage, Victor taps the microphone. Every camera turns to him.
+
+**VICTOR (Warm, public voice):**
+Start: (00:38.90) | End: (00:44.96)
+"Friends. Tonight we celebrate fifty years. And tonight, sadly, a thief is in this room."
+
+**ACTION:**
+Start: (00:45.11) | End: (00:48.91)
+A spotlight swings onto Maya.
+
+**VICTOR (Pointing):**
+Start: (00:49.06) | End: (00:53.63)
+"That woman stole a priceless reel from my archive. Officers, please."
+
+**ACTION:**
+Start: (00:53.78) | End: (00:57.94)
+Two police officers push through the crowd toward Maya. Cameras flash in her face.
+
+**MAYA (Loud, defiant):**
+Start: (00:58.09) | End: (01:03.40)
+"Ask him what's on the reel! Ask him who chained the fire door!"
+
+**ACTION:**
+Start: (01:03.55) | End: (01:07.75)
+Victor's smile does not move. But his hand closes into a fist around the microphone.
+
+Scene end: 01:07.90
+
+--- SCRIPT END ---

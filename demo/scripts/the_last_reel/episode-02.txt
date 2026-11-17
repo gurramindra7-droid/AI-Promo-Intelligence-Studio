@@ -1,0 +1,91 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: Thrown out of the studio, Maya is stopped in the rain by Daniel Hale, Victor's son, who has taken the reel from his father's office and wants to know what it hides.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: EXT. HALE PICTURES GATE - NIGHT - RAIN
+Scene start: 00:00.00
+
+**ACTION:**
+Start: (00:00.00) | End: (00:04.36)
+Rain hammers the studio gate. A guard shoves Maya onto the wet pavement and tosses her bag after her.
+
+**GUARD (Sneering):**
+Start: (00:04.51) | End: (00:08.71)
+"Mr Hale says you're lucky he isn't calling the police."
+
+**MAYA (Furious):**
+Start: (00:08.86) | End: (00:12.69)
+"Tell Mr Hale I know what's on that reel."
+
+**SOUND FX:**
+Start: (00:12.84) | End: (00:14.96)
+A car engine. Headlights sweep across Maya's face.
+
+**ACTION:**
+Start: (00:15.11) | End: (00:19.15)
+A black sedan stops. The window lowers: Daniel Hale, Victor's son.
+
+**DANIEL (Calm):**
+Start: (00:19.30) | End: (00:23.13)
+"Get in. You'll catch pneumonia arguing with a gate."
+
+**MAYA (Wary):**
+Start: (00:23.28) | End: (00:26.74)
+"You're his son. Why would I trust you?"
+
+**ACTION:**
+Start: (00:26.89) | End: (00:30.93)
+Daniel lifts a film can from the passenger seat. Can 4417.
+
+**DANIEL (Serious):**
+Start: (00:31.08) | End: (00:35.28)
+"Because I took this from his desk ten minutes ago."
+
+**MAYA (Shocked):**
+Start: (00:35.43) | End: (00:38.15)
+"You stole from your own father?"
+
+Scene end: 00:38.30
+
+SCENE 02
+Scene heading: INT. DANIEL'S CAR - MOVING - NIGHT
+Scene start: 00:38.30
+
+**CAMERA:**
+Start: (00:38.30) | End: (00:40.98)
+Wipers beat. Streetlights slide across their faces.
+
+**DANIEL (Quiet):**
+Start: (00:41.13) | End: (00:47.19)
+"I've never seen him afraid. Tonight he locked himself in his office and burned papers."
+
+**MAYA (Tense):**
+Start: (00:47.34) | End: (00:50.06)
+"Then you know he's hiding something."
+
+**DANIEL (Hesitant):**
+Start: (00:50.21) | End: (00:56.27)
+"I know he called someone and said one sentence. The Reyes girl has seen it."
+
+**ACTION:**
+Start: (00:56.42) | End: (01:00.74)
+Maya's phone lights up. Unknown number. A text: GIVE BACK THE REEL OR YOUR MOTHER'S HOUSE BURNS TOO.
+
+**MAYA (Terrified):**
+Start: (01:00.89) | End: (01:03.61)
+"Too? What does he mean, too?"
+
+**ACTION:**
+Start: (01:03.76) | End: (01:07.76)
+Daniel swerves to the kerb and stares at the message.
+
+**DANIEL (Grim):**
+Start: (01:07.91) | End: (01:12.11)
+"The old studio fire. The one where your father disappeared."
+
+Scene end: 01:12.26
+
+--- SCRIPT END ---

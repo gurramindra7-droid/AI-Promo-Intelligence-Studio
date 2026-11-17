@@ -1,0 +1,60 @@
+AI NOTES - tools used + places AI got it wrong (needed for the doc)
+==================================================================
+
+Tools used
+- Claude Code (Opus 5.5): project setup, code for pipeline, explanations
+- Gemini 3.8 Flash via LiteLLM (free tier): beat tagging + cold-viewer check
+- Groq gpt-oss-120b (free tier): backup model if Gemini fails
+- (add others as you use them)
+
+Places AI got it wrong (date - what happened - how it was caught/fixed)
+- 2026-11-17 - setup: wrapper first tried the backup model with an empty key and gave a confusing
+  "Illegal header value" error. Fixed: models with no key are now skipped with a clear message.
+- 2026-11-17 - setup: Claude picked model names from memory (gemini-2.5-flash, llama-3.3-70b) that were
+  retired for new keys. Then Gemini 3.8 rejected the `temperature` setting, so EVERY call silently fell
+  back to Groq while the log still said "Gemini". Caught by checking the raw error text. Fixed: models
+  listed from the live API, unsupported params dropped automatically, run log now shows "answered_by".
+  Lesson: a fallback can hide a broken primary - always log which model actually answered.
+- 2026-11-17 - cold viewer: Claude assumed Gemini's free tier was enough. Real limit for
+  gemini-3.8-flash = 20 requests/DAY; one show needs ~31 calls, so half the promos were silently
+  judged by the backup model (inconsistent scores). Caught via the "answered_by" log line.
+- 2026-11-17 - cold viewer: the AI said "understood = true" for 8 promos while scoring standalone 0-1
+  (self-contradiction). Fixed in code: understood := standalone >= 3; AI's own yes/no kept separately.
+- 2026-11-17 - model swap: same prompt, same script -> Gemini rated 5 lines hook>=4, Groq rated only 1.
+  Different models use the 0-5 scale differently, so FIXED thresholds (hook>=4) silently break when the
+  model is swapped (Groq run: only 8 candidates, even after relaxing to 3). Important because the
+  interview may plug in other models.
+- 2026-11-17 - cold viewer (Groq): 0/8 promos scored standalone >=3, yet the AI said "understood" for 8/8.
+  Main confusion: fantasy lore ("dragon", "spirit", "ancient", "grandfather") - a stranger needs setup.
+  Also captions-only text misses visuals a real viewer would see -> ACTION notes matter.
+- 2026-11-17 - full run: same script, same prompt, temperature 0.2 -> a fresh (no-cache) run gave 23
+  candidates instead of 16, because the AI's line scores shift a little between runs. Lesson: AI
+  output is not perfectly repeatable; the cache makes a run reproducible, and the evaluation should
+  be reported for one fixed, saved run.
+- 2026-11-17 - full run: 4 parallel stranger checks exceeded Groq's free tokens-per-minute limit;
+  3/23 checks failed (backup Gemini already out of daily quota). Fixed: 2 at a time + 60s final wait.
+- 2026-11-17 - Kuku input pack: Claude sized the tagger's chunks by LINE COUNT (tuned on short YouTube
+  captions). Kuku's screenplay lines are long (action descriptions, emotions, loglines), so one chunk
+  needed 9,723 tokens > Groq's free limit of 8,000 tokens/minute -> the whole 50-episode run failed on
+  its first call. Fixed: chunks are sized by CHARACTERS (max 5,000 per call), the wrapper waits exactly
+  as long as Groq asks ("try again in Xs"), and a failed part no longer kills the show (scored 0 + logged).
+  2nd attempt still failed ("Requested 10,088"): Groq counts the prompt PLUS the reserved reply size
+  (max_tokens) against the 8,000/min limit. Claude's first test had misread this. Final fix:
+  max_tokens 5,000 + 3,500 chars of script per call (tested: 1,822 prompt + 3,393 reply tokens),
+  and the run now ABORTS if >30% of parts fail, instead of ranking near-empty scores.
+- 2026-11-17 - Kuku input pack: the tagger prompt said "Be strict: most lines are 0-2" (written for
+  YouTube captions). On Kuku's dense, dramatic screenplay the model then scored 78 of 81 lines hook 0,
+  so scores could no longer tell good moments from weak ones. Fixed for long screenplays: "use the FULL
+  0-5 range within each part" -> the strongest betrayal line in episode 1 now scores 5. Also: compact replies
+  ([id, hook, cliff, ...]) + low reasoning halved tokens per line so 50 episodes fit a free daily budget
+  (Groq: 200,000 tokens/day per model); the stranger test runs on the smaller gpt-oss-20b.
+- 2026-11-17 - Kuku run: free-tier DAILY limits again - gpt-oss-120b's 200,000 tokens/day ran out after
+  22 of 29 tagging parts; the rest (and all 30 stranger tests) ran on gpt-oss-20b (backup). Logged
+  per call in run_log ("answered_by": 120b 22, 20b 37). Long parts sometimes came back cut off (skipped
+  lines / broken JSON) -> failed parts are now retried as two halves; 26 of 2,073 lines (1.3%) stayed
+  unscored. Two code bugs by Claude, both caught by the run: a reply-shape crash in the tagger, and a
+  reused variable name (`m`) in run.py that overwrote the show's metadata.
+- 2026-11-17 - verifier: Claude's rule "a cut must not end past the next line's start" was written for
+  captions. Kuku screenplay lines overlap (a line's End can be after the next Start), so 3 correct cuts
+  were flagged. Fixed: when the script writes an End time, the cut must equal it exactly; tested by
+  planting errors (end +1s, start +1s, invented hook - all caught).

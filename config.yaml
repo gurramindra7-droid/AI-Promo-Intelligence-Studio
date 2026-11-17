@@ -1,0 +1,76 @@
+# AI Promo Finder - settings
+# To swap the AI model, change ONE line: `model:` below.
+# Names follow LiteLLM format "<provider>/<model>". Examples:
+#   groq/openai/gpt-oss-120b             (free tier, ~1000 requests/day, needs GROQ_API_KEY)
+#   gemini/gemini-3.8-flash              (free tier only 20 requests/DAY - too few for one show)
+#   openai/gpt-4.1                       (paid, needs OPENAI_API_KEY)
+#   anthropic/claude-sonnet-5-5          (paid, needs ANTHROPIC_API_KEY)
+
+llm:
+  model: groq/openai/gpt-oss-120b            # main model (user decision 2026-11-17: Gemini free tier = 20/day)
+  fallback_model: groq/openai/gpt-oss-20b    # used if the main model fails (e.g. daily limit). Gemini free = 20/day, too few. null = off.
+  temperature: 0.2          # low = more consistent answers between runs
+  max_tokens: 4200          # Groq free tier counts prompt + max_tokens against 8,000 tokens/minute,
+                            # so prompt (~2k) + 5,000 must stay under 8,000
+  timeout_seconds: 120
+  reasoning_effort: low     # reasoning models (gpt-oss): less hidden thinking -> ~half the tokens
+  json_retries: 1           # if the reply is not valid JSON, ask again this many times
+  cache_dir: cache          # saved replies, so re-runs are free and fast
+  use_cache: true
+
+# Promo rules from the brief. Values marked USER DECISION are yours to set (Step 6).
+promo:
+  min_seconds: 20
+  max_seconds: 60
+  hook_window_seconds: 3          # hook must land in the first 3 seconds
+  preferred_min_seconds: 25       # USER DECISION: slight preference for 25-45s
+  preferred_max_seconds: 45       # USER DECISION
+  # USER DECISION (2026-11-17): "relative" - pick each show's top-scored lines, because
+  # different models use the 0-5 scale differently (Gemini 5 strong hooks vs Groq 1).
+  selection: relative             # relative | absolute
+  hook_top_pct: 10                # relative: top 10% of lines by hook score can START a promo
+  cliff_top_pct: 10               # relative: top 10% of lines by cliff score can END a promo
+  max_top_pct: 25                 # relative: widen by 5% steps up to this if too few candidates
+  hook_threshold: 4               # absolute mode only: beat must score >= this (0-5) to start a promo
+  cliff_threshold: 4              # absolute mode only: beat must score >= this (0-5) to end a promo
+  max_overlap: 0.7                # drop near-duplicate candidates that overlap more than 70%
+  min_candidates: 15              # if fewer pass the thresholds, relax them by 1 (logged in output)
+  relax_floor: 3                  # never relax thresholds below this
+  max_candidates: 30              # cap sent to the cold-viewer step (controls AI cost)
+  allow_joins: false              # USER DECISION (2026-11-17): OFF. In testing, joined clips
+                                  # often stitched two unrelated scenes together
+  join_penalty: 0.85              # USER DECISION: joined promos score x0.85 (continuous preferred)
+  hook_segment_seconds: 8         # joined promos: length of the opening hook moment
+  min_join_gap_seconds: 10        # joined promos: segments must be at least this far apart
+  max_join_gap_seconds: 90        # USER DECISION (2026-11-17): joins only within 90s and the same episode,
+                                  # so a promo never mixes two different storylines (was 300s)
+
+ranking:
+  top_n: 10
+  max_per_archetype_in_top: 2     # USER DECISION: variety in the top list
+  prefer_early_episodes: true     # USER DECISION: a viewer who clicks starts at episode 1
+  early_portion: 0.33             #   "early" = first third of the show
+  early_bonus: 1.05               #   early promos score x1.05
+  spoiler_guard: true             # USER DECISION: don't give away late twists
+  spoiler_tail: 0.2               #   "late" = last 20% of the show
+  spoiler_penalty: 0.9            #   late promos score x0.9
+  outside_length_factor: 0.95     # USER DECISION: promos outside 25-45s score x0.95
+
+cold_viewer:
+  workers: 2                      # promos judged at the same time (4 hit Groq's free tokens-per-minute limit)
+
+output:
+  dir: outputs
+
+# --- AI Promo Intelligence Studio (multi-agent app; does NOT affect the original pipeline above) ---
+# Every *_model may be overridden by env STUDIO_<ROLE>_MODEL. null = use llm.model.
+studio:
+  agent_model: null                     # hook + cliffhanger agents
+  stranger_model: groq/openai/gpt-oss-20b   # blind stranger test (simpler task, cheaper model)
+  critic_model: null                    # editorial critic
+  story_model: null                     # events/relationships from episode loglines
+  copilot_model: null                   # editorial copilot (routing + grounded answer)
+  shortlist_pct: 15                     # agents re-judge only the top 15% lines from the original tagger
+  max_candidates: 20                    # clips sent to the stranger + critic agents (cost control)
+  critic_batch: 5
+  agent_batch: 25

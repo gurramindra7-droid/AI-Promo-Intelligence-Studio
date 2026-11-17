@@ -1,0 +1,111 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: Maya Reyes, a night-shift film archivist at Hale Pictures, finds an unlabelled reel carrying her missing father's name; studio head Victor Hale walks in and demands it.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HALE PICTURES ARCHIVE VAULT - NIGHT
+Scene start: 00:00.00
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:02.96)
+Slow push through rows of steel film cans glowing under a single work lamp.
+
+**ACTION:**
+Start: (00:03.11) | End: (00:07.39)
+Maya threads an old reel onto the restoration bench, gloves on, breath fogging in the cold vault.
+
+**SOUND FX:**
+Start: (00:07.54) | End: (00:09.58)
+The projector motor coughs, then hums.
+
+**MAYA (Whispering):**
+Start: (00:09.73) | End: (00:14.67)
+"Can 4417. No title, no date. Who hides a film down here?"
+
+**ACTION:**
+Start: (00:14.82) | End: (00:19.02)
+She turns the can over. A strip of masking tape reads: PROPERTY OF THOMAS REYES.
+
+**MAYA (Stunned):**
+Start: (00:19.17) | End: (00:20.77)
+"Dad?"
+
+**CAMERA:**
+Start: (00:20.92) | End: (00:23.68)
+Close on Maya's trembling hand over the faded handwriting.
+
+**MAYA (Shaken):**
+Start: (00:23.83) | End: (00:29.52)
+"Twenty years. They told us there was nothing left of him. Not one frame."
+
+**SOUND FX:**
+Start: (00:29.67) | End: (00:31.75)
+The vault door slams. Footsteps on concrete.
+
+**VICTOR (Cold, controlled):**
+Start: (00:31.90) | End: (00:36.10)
+"That can is not on your restoration list, Miss Reyes."
+
+**ACTION:**
+Start: (00:36.25) | End: (00:40.49)
+Victor Hale steps into the lamp light, silver hair, black overcoat, two security guards behind him.
+
+**MAYA (Defensive):**
+Start: (00:40.64) | End: (00:43.73)
+"It was misfiled. I was logging it."
+
+**VICTOR (Quietly):**
+Start: (00:43.88) | End: (00:45.86)
+"Give it to me."
+
+**MAYA (Steady):**
+Start: (00:46.01) | End: (00:49.10)
+"It has my father's name on it."
+
+**VICTOR (Smiling thinly):**
+Start: (00:49.25) | End: (00:54.19)
+"Your father stole from this studio. Everything he touched belongs to me."
+
+**ACTION:**
+Start: (00:54.34) | End: (00:58.54)
+Victor nods. A guard grabs Maya's wrist and twists the reel out of her hands.
+
+**MAYA (In pain):**
+Start: (00:58.69) | End: (01:00.67)
+"Let go of me!"
+
+**VICTOR (To the guards):**
+Start: (01:00.82) | End: (01:05.02)
+"She's finished here. Escort her out. And take her keycard."
+
+Scene end: 01:05.17
+
+SCENE 02
+Scene heading: INT. ARCHIVE CORRIDOR - CONTINUOUS
+Scene start: 01:05.17
+
+**ACTION:**
+Start: (01:05.17) | End: (01:09.17)
+The guards march Maya down the corridor. She glances back.
+
+**CAMERA:**
+Start: (01:09.32) | End: (01:12.24)
+Through the vault window: Victor alone, holding the reel up to the light.
+
+**ACTION:**
+Start: (01:12.39) | End: (01:16.39)
+Victor's face drains of colour as he reads the frames.
+
+**VICTOR (Under his breath):**
+Start: (01:16.54) | End: (01:20.00)
+"He filmed it. That fool actually filmed it."
+
+**ACTION:**
+Start: (01:20.15) | End: (01:24.39)
+He lowers the reel. In the frame, frozen: a younger Victor standing beside a burning door.
+
+Scene end: 01:24.54
+
+--- SCRIPT END ---

@@ -1,0 +1,87 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: Ruth Okafor, an old projectionist and Maya's mentor, screens the reel: it shows the studio fire twenty years ago and a man locking a door from outside.
+CONTINUITY NOTES: Original demo show for AI Promo Intelligence Studio.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. RIALTO CINEMA - PROJECTION BOOTH - NIGHT
+Scene start: 00:00.00
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:02.76)
+Dust floats in the beam of a vintage projector.
+
+**ACTION:**
+Start: (00:02.91) | End: (00:07.07)
+Ruth Okafor, seventy, threads Can 4417 with practised hands while Maya and Daniel watch.
+
+**RUTH (Gruff):**
+Start: (00:07.22) | End: (00:13.65)
+"Nitrate stock. If this catches, the whole booth goes up in seconds. Nobody breathes on it."
+
+**SOUND FX:**
+Start: (00:13.80) | End: (00:15.80)
+The projector clatters to life.
+
+**CAMERA:**
+Start: (00:15.95) | End: (00:18.91)
+On the small screen: grainy footage of the old Hale studio lot at night.
+
+**MAYA (Whispering):**
+Start: (00:19.06) | End: (00:22.89)
+"That's the old sound stage. The one that burned."
+
+**ACTION:**
+Start: (00:23.04) | End: (00:27.36)
+On screen, flames climb the stage wall. A man in a long coat chains the fire door shut.
+
+**DANIEL (Horrified):**
+Start: (00:27.51) | End: (00:29.49)
+"Someone locked them in."
+
+**ACTION:**
+Start: (00:29.64) | End: (00:33.84)
+Ruth stops the projector on a single frame. The man's hand: a heavy signet ring.
+
+**RUTH (Very still):**
+Start: (00:33.99) | End: (00:39.30)
+"I know that ring. I've seen it on one man for forty years."
+
+**MAYA (Barely audible):**
+Start: (00:39.45) | End: (00:41.05)
+"Say it."
+
+Scene end: 00:41.20
+
+SCENE 02
+Scene heading: INT. RIALTO CINEMA - PROJECTION BOOTH - CONTINUOUS
+Scene start: 00:41.20
+
+**RUTH (Slowly):**
+Start: (00:41.20) | End: (00:42.80)
+"Victor Hale."
+
+**ACTION:**
+Start: (00:42.95) | End: (00:46.91)
+Daniel steps back from the screen as if struck.
+
+**DANIEL (Breaking):**
+Start: (00:47.06) | End: (00:50.89)
+"No. My father was a producer, not a murderer."
+
+**SOUND FX:**
+Start: (00:51.04) | End: (00:53.12)
+Downstairs, the cinema's front door bangs open.
+
+**RUTH (Urgent):**
+Start: (00:53.27) | End: (00:54.88)
+"Were you followed?"
+
+**ACTION:**
+Start: (00:55.03) | End: (00:59.11)
+Footsteps race up the stairs. The booth door handle begins to turn.
+
+Scene end: 00:59.26
+
+--- SCRIPT END ---
