@@ -33,7 +33,7 @@ html,body{margin:0;height:100%;background:#111;font-family:Inter,'Segoe UI',syst
 <div id="fallback"></div></div>
 <script type="application/json" id="cfg">__CFG__</script>
 <script type="module">
-import { mount } from "/app/static/js/chart3d.js?v=__V__";
+import { mount } from "./app/static/js/chart3d.js?v=__V__";   // relative to the page (Cloud prefix /~/+/)
 mount(JSON.parse(document.getElementById("cfg").textContent));
 </script></body></html>"""
 

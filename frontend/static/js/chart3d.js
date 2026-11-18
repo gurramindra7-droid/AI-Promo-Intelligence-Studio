@@ -15,7 +15,7 @@ export async function mount(cfg) {
   const tip = document.getElementById("tip");
   const labels = document.getElementById("labels");
   let THREE;
-  try { THREE = await import("/app/static/vendor/three/three.module.js"); }
+  try { THREE = await import(new URL("../vendor/three/three.module.js", import.meta.url).href); }
   catch (e) { return fail("3D library could not load. Use the Table view."); }
   const canvas = document.createElement("canvas");
   root.insertBefore(canvas, root.firstChild);

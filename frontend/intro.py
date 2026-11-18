@@ -16,7 +16,7 @@ import uuid
 import streamlit as st
 
 KEY = "apis.intro.v2"
-SCRIPT_URL = "/app/static/js/intro3d.js"
+SCRIPT_URL = "app/static/js/intro3d.js"   # relative: Streamlit Cloud serves the app under /~/+/
 
 
 def tag(force: bool) -> str:

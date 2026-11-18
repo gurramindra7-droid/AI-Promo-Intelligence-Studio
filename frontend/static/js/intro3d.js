@@ -6,7 +6,7 @@
  * 3D curve; screenplay pages rise into frame; an editorial timeline draws in with three clip markers;
  * the camera dollies through; the product name lands; the overlay dissolves into the dashboard.
  *
- * Loaded by frontend/intro.py as <script type="module" src="/app/static/js/intro3d.js?force=0|1&n=...">.
+ * Loaded by frontend/intro.py as <script type="module" src="app/static/js/intro3d.js?force=0|1&n=...">.
  * Shown once per browser (localStorage), skippable (button / Esc), reduced-motion aware, with a CSS
  * fallback when WebGL or Three.js is unavailable. Any error removes the overlay - the app always loads.
  */
@@ -94,7 +94,7 @@ async function run() {
   const prog = el.querySelector(".prog");
 
   let THREE = null;
-  try { THREE = await import("/app/static/vendor/three/three.module.js"); } catch (e) { THREE = null; }
+  try { THREE = await import(new URL("../vendor/three/three.module.js", import.meta.url).href); } catch (e) { THREE = null; }
   const canvas = doc.createElement("canvas");
   el.insertBefore(canvas, el.firstChild);
   let renderer = null;
