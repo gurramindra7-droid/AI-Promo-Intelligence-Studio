@@ -46,9 +46,15 @@ pages = {
     ],
 }
 st.session_state["_pages"] = {pg.url_path: pg for group in pages.values() for pg in group}
+
+
+def _replay_intro() -> None:                         # defined here so a cached intro module can never break it
+    st.session_state.replay_intro = True
+
+
 page = st.navigation(pages, expanded=True)
 with st.sidebar:                                         # under the page list
-    st.button("Replay intro", icon=":material/replay:", key="replay_intro_btn", on_click=intro.request_replay,
+    st.button("Replay intro", icon=":material/replay:", key="replay_intro_btn", on_click=_replay_intro,
               width="stretch")
 if page.url_path not in ("copilot",):                  # round 'Ask Studio' button on every other page
     proj = ui.current_project()

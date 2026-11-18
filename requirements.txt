@@ -14,4 +14,4 @@ pyvis>=0.3.2
 # tests
 pytest>=8.0
 httpx>=0.27
-# Last dependency refresh: 2026-11-18 (forces a clean restart on Streamlit Cloud)
+# Last dependency refresh: 2026-11-18b (forces a clean restart on Streamlit Cloud)
