@@ -4,25 +4,25 @@
  * Scene: a black studio. A brushed-metal film reel (extruded flanges with cut-outs, matte film coil,
  * hub) is revealed by a white key light and turns; a sprocketed film strip flows off the reel along a
  * 3D curve; screenplay pages rise into frame; an editorial timeline draws in with three clip markers;
- * the camera dollies through; the product name lands; the overlay dissolves into the dashboard.
+ * the camera dollies through; the product name lands; an "Enter Studio" button appears and the scene keeps
+ * moving gently until the user enters.
  *
  * Loaded by frontend/intro.py as <script type="module" src="app/static/js/intro3d.js?force=0|1&n=...">.
- * Shown once per browser (localStorage), skippable (button / Esc), reduced-motion aware, with a CSS
+ * Plays every time the app is opened (and on "Replay intro"). Skip (button / Esc) jumps to the end screen;
+ * the user enters only with the Enter Studio button (or the Enter key). Reduced-motion aware, with a CSS
  * fallback when WebGL or Three.js is unavailable. Any error removes the overlay - the app always loads.
  */
 const params = new URL(import.meta.url).searchParams;
 const FORCE = params.get("force") === "1";
 const NONCE = params.get("n") || "0";
-const KEY = "apis.intro.v2";
 const DURATION = 5.0;            // seconds of animation
 const FREEZE = params.has("freeze") ? parseFloat(params.get("freeze")) : null;   // QA only: render one frame at t
 const doc = document;
 
 function storage(kind) { try { return window[kind]; } catch (e) { return null; } }
-const local = storage("localStorage"), sess = storage("sessionStorage");
+const sess = storage("sessionStorage");
 
 (function guard() {
-  if (!FORCE && local && local.getItem(KEY)) return;
   if (sess) { if (sess.getItem("ap3d-" + NONCE)) return; sess.setItem("ap3d-" + NONCE, "1"); }
   if (doc.getElementById("ap3d")) return;
   run().catch(() => { const o = doc.getElementById("ap3d"); if (o) o.remove(); });
@@ -51,6 +51,17 @@ function css() {
   #ap3d .skip{position:absolute;right:28px;bottom:26px;background:rgba(0,0,0,.4);color:#fff;border:1px solid #444;border-radius:6px;
     font:500 13px Inter,'Segoe UI',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;cursor:pointer;transition:background .15s,border-color .15s}
   #ap3d .skip:hover{background:#292929;border-color:#777} #ap3d .skip:focus-visible{outline:2px solid #fff;outline-offset:2px}
+  #ap3d .enter{position:absolute;left:clamp(24px,6vw,96px);bottom:clamp(24px,6vh,64px);background:#fff;color:#000;border:1px solid #fff;
+    border-radius:8px;font:600 15px Inter,'Segoe UI',sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:14px 30px;cursor:pointer;
+    display:flex;align-items:center;gap:12px;opacity:0;transform:translateY(12px);pointer-events:none;
+    transition:opacity .6s ease .2s,transform .6s cubic-bezier(.16,1,.3,1) .2s,background .15s,color .15s}
+  #ap3d .enter svg{width:18px;height:18px;transition:transform .2s ease}
+  #ap3d .enter:hover{background:#000;color:#fff} #ap3d .enter:hover svg{transform:translateX(4px)}
+  #ap3d .enter:focus-visible{outline:2px solid #fff;outline-offset:4px}
+  #ap3d.ready .enter{opacity:1;transform:none;pointer-events:auto}
+  #ap3d.ready .skip,#ap3d.ready .prog{opacity:0;pointer-events:none}
+  #ap3d .title{transition:bottom .6s cubic-bezier(.16,1,.3,1)}
+  #ap3d.ready .title{bottom:clamp(110px,19vh,210px)}
   #ap3d .prog{position:absolute;left:0;bottom:0;height:2px;background:#fff;opacity:.5;width:0}
   #ap3d .fb{position:absolute;left:0;right:0;top:38%;height:120px;display:flex;gap:12px;padding:0 12px;opacity:.5;
     animation:ap3d-fb 4.6s linear both}
@@ -69,7 +80,9 @@ function overlay() {
   el.innerHTML = '<div class="vig"></div><div class="shade"></div><div class="title"><div class="ln l1"><span>AI PROMO</span></div>' +
     '<div class="ln l2"><span>INTELLIGENCE STUDIO</span></div><div class="rule"></div>' +
     '<div class="sub">Editorial Intelligence for Microdrama</div></div>' +
-    '<button class="skip" type="button">Skip intro</button><div class="prog"></div>';
+    '<button class="skip" type="button">Skip intro</button><div class="prog"></div>' +
+    '<button class="enter" type="button" aria-label="Enter the studio">Enter Studio' +
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>';
   doc.body.appendChild(el);
   return el;
 }
@@ -77,18 +90,28 @@ function overlay() {
 async function run() {
   const style = css();
   const el = overlay();
-  let finished = false, raf = 0, cleanup = () => {};
-  const finish = () => {
+  let finished = false, isReady = false, skipTo = null, raf = 0, cleanup = () => {};
+  const enterBtn = el.querySelector(".enter");
+  const finish = () => {                                       // only the Enter Studio button / Enter key gets here
     if (finished) return; finished = true;
-    try { local && local.setItem(KEY, String(Date.now())); } catch (e) {}
     el.style.opacity = "0";
     setTimeout(() => { cancelAnimationFrame(raf); try { cleanup(); } catch (e) {} el.remove(); style.remove();
       doc.removeEventListener("keydown", onKey); }, 650);
   };
-  const onKey = (e) => { if (e.key === "Escape") finish(); };
-  el.querySelector(".skip").addEventListener("click", finish);
+  const ready = () => {                                        // end screen: title + Enter Studio
+    if (isReady) return; isReady = true;
+    el.classList.add("show-title", "ready");
+    setTimeout(() => { try { enterBtn.focus({ preventScroll: true }); } catch (e) {} }, 400);
+  };
+  const skip = () => { if (!isReady) { skipTo = DURATION; ready(); } };
+  const onKey = (e) => {
+    if (e.key === "Escape") skip();
+    else if (e.key === "Enter" && isReady) { e.preventDefault(); finish(); }
+  };
+  el.querySelector(".skip").addEventListener("click", skip);
+  enterBtn.addEventListener("click", finish);
   doc.addEventListener("keydown", onKey);
-  if (FREEZE === null) setTimeout(finish, 9000);              // hard failsafe
+  if (FREEZE === null) setTimeout(ready, 9000);               // failsafe: the Enter button always appears
 
   const still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const prog = el.querySelector(".prog");
@@ -108,23 +131,24 @@ async function run() {
     fb.innerHTML = "<i></i>".repeat(14);
     if (!still) el.insertBefore(fb, el.firstChild);
     requestAnimationFrame(() => el.classList.add("show-title"));
-    setTimeout(finish, still ? 1600 : 4600);
+    setTimeout(ready, still ? 600 : 4600);
     return;
   }
 
   const scene = buildScene(THREE, renderer, canvas);
   cleanup = scene.dispose;
-  if (FREEZE !== null) { scene.update(FREEZE); if (FREEZE > 2.9) el.classList.add("show-title"); return; }
-  if (!still) setTimeout(finish, (DURATION - 0.55) * 1000 + 60);   // ends on time even if frames are throttled
-  const t0 = performance.now();
+  if (FREEZE !== null) { scene.update(FREEZE); if (FREEZE > 2.9) el.classList.add("show-title"); if (FREEZE >= DURATION) ready(); return; }
+  if (!still) setTimeout(ready, DURATION * 1000 + 60);        // end screen on time even if frames are throttled
+  let t0 = performance.now();
   const tick = () => {
+    if (skipTo !== null) { t0 = performance.now() - skipTo * 1000; skipTo = null; }   // Skip: jump to the end pose
     const t = still ? DURATION - 0.6 : (performance.now() - t0) / 1000;
-    scene.update(t);
+    scene.update(t);                                           // after DURATION the reel and film keep turning gently
     prog.style.width = Math.min(100, (t / DURATION) * 100) + "%";
     if (t > 2.9 && !el.classList.contains("show-title")) el.classList.add("show-title");
-    if (still) { setTimeout(finish, 1800); return; }          // one composed frame, no motion
-    if (t >= DURATION - 0.55) { finish(); }
-    if (!finished || t < DURATION + 0.7) raf = requestAnimationFrame(tick);
+    if (still) { ready(); return; }                            // one composed frame, no motion
+    if (t >= DURATION) ready();
+    if (!finished) raf = requestAnimationFrame(tick);
   };
   raf = requestAnimationFrame(tick);
 }

@@ -4,9 +4,10 @@ The scene lives in frontend/static/js/intro3d.js and is served locally from /app
 This module only injects one <script type="module" src=...> tag through st.html - an empty script with a
 src attribute, so Streamlit's DOMPurify sanitiser keeps it.
 
-  - shown once per browser: localStorage key 'apis.intro.v2'
-  - Settings -> Appearance & intro -> "Replay introduction", or open /?intro=1
-  - Skip button / Esc; prefers-reduced-motion -> one composed still frame
+  - plays every time the app is opened (once per visit, not on every page switch)
+  - ends on an "Enter Studio" button: the user enters only by clicking it (or pressing Enter)
+  - replay: sidebar "Replay intro", Settings -> Appearance & intro, or open /?intro=1
+  - Skip button / Esc jumps to the end screen; prefers-reduced-motion -> one composed still frame
   - no WebGL or Three.js -> CSS fallback; any error removes the overlay, the app always loads
 """
 from __future__ import annotations
@@ -15,7 +16,6 @@ import uuid
 
 import streamlit as st
 
-KEY = "apis.intro.v2"
 SCRIPT_URL = "app/static/js/intro3d.js"   # relative: Streamlit Cloud serves the app under /~/+/
 
 
@@ -27,6 +27,11 @@ def tag(force: bool) -> str:
 def render(force: bool = False) -> None:
     with st.container(key="intro_host"):
         st.html(tag(force), unsafe_allow_javascript=True)
+
+
+def request_replay() -> None:
+    """on_click callback: runs before the script, so maybe_render() sees it in the same rerun."""
+    st.session_state.replay_intro = True
 
 
 def maybe_render() -> None:

@@ -54,12 +54,12 @@ def _general():
 
 def _appearance():
     with st.container(border=True):
-        ui.section("Introduction", "5-second Three.js opening, shown once per browser")
+        ui.section("Introduction", "5-second Three.js opening, plays each time the studio opens")
         a, b = st.columns([1, 3], vertical_alignment="center")
         if a.button("Replay introduction", icon=":material/replay:", type="primary"):
             st.session_state.replay_intro = True
             st.rerun()
-        b.caption("Skippable at any time (button or Esc). With reduced motion turned on in your system, one still "
+        b.caption("Ends on an Enter Studio button; Skip (button or Esc) jumps to that screen. With reduced motion turned on in your system, one still "
                   "frame is shown instead; without WebGL a simple CSS version plays.")
     with st.container(border=True):
         ui.section("Theme", "fixed by design")

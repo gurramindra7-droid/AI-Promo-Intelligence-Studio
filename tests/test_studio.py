@@ -281,7 +281,7 @@ def test_intro_script_survives_sanitiser():
     assert re.fullmatch(r'<script type="module" src="app/static/js/intro3d\.js\?force=1&n=[0-9a-f]{12}"></script>', cap["b"])
     assert cap["k"].get("unsafe_allow_javascript") is True
     js = (ROOT / "frontend" / "static" / "js" / "intro3d.js").read_text(encoding="utf-8")
-    for must in (intro.KEY, "Skip intro", "prefers-reduced-motion", "WebGLRenderer", "INTELLIGENCE STUDIO",
+    for must in ("Enter Studio", "Skip intro", "prefers-reduced-motion", "WebGLRenderer", "INTELLIGENCE STUDIO",
                  "../vendor/three/three.module.js"):
         assert must in js, must
     assert "http://" not in js and "https://" not in js, "no CDN: everything is served locally"

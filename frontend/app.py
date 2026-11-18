@@ -47,6 +47,9 @@ pages = {
 }
 st.session_state["_pages"] = {pg.url_path: pg for group in pages.values() for pg in group}
 page = st.navigation(pages, expanded=True)
+with st.sidebar:                                         # under the page list
+    st.button("Replay intro", icon=":material/replay:", key="replay_intro_btn", on_click=intro.request_replay,
+              width="stretch")
 if page.url_path not in ("copilot",):                  # round 'Ask Studio' button on every other page
     proj = ui.current_project()
     if proj:
